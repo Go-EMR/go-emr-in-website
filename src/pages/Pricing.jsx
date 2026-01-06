@@ -83,12 +83,12 @@ export default function Pricing() {
       {/* Pricing Cards */}
       <section className="pb-20 -mt-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             {plans.map((plan, i) => (
-              <div key={i} className={`relative ${plan.featured ? 'pricing-card-featured' : 'pricing-card'}`}>
+              <div key={i} className={`relative ${plan.featured ? 'pricing-card-featured' : 'pricing-card mt-4'}`}>
                 {plan.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary-600 text-white">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                    <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary-600 text-white shadow-lg">
                       <Sparkles className="w-3 h-3" /> Most Popular
                     </span>
                   </div>

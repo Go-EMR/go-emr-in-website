@@ -147,7 +147,7 @@
 
   /* Pricing Card */
   .pricing-card {
-    @apply card p-8 text-center relative overflow-hidden;
+    @apply card p-8 text-center relative;
   }
 
   .pricing-card-featured {
